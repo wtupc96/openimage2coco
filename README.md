@@ -77,4 +77,4 @@ An easy-to-use tool for converting OpenImage csv annotations into COCO-format js
 
     | ![img](img.jpg)    | ![img](mask.png)  | ![img](wo_all_zero.png)                                      | ![img](all_zero.png)                   |
     | ------------------ | ----------------- | ------------------------------------------------------------ | -------------------------------------- |
-    | Image in OpenImage | The mask of image | The mask after converting without setting the outermost pixels to 0 | with setting the outermost pixels to 0 |
+    | Image in OpenImage | The mask of image | Without setting the outermost pixels to 0 | With setting the outermost pixels to 0 |
