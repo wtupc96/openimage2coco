@@ -419,13 +419,7 @@ class OpenImage2COCO(object):
     def visualize_segmentation(self, sample_num=10, r_seed=3, g_seed=7, b_seed=19, save_path=None):
         coco =  COCO(save_path if save_path else self.seg_save_path)
         selected_images = random.choices(coco.loadImgs(coco.getImgIds()), k=sample_num)
-        
-        specified_image = '6ba6e6afe9964a18.jpg'
-        for i in coco.loadImgs(coco.getImgIds()):
-            if i['file_name'] == specified_image:
-                selected_images.append(i)
-                break
-            
+                    
         for si in selected_images:
             img_id = si['id']
             annos = coco.loadAnns(coco.getAnnIds(imgIds=img_id))
